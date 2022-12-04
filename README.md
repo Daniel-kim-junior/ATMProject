@@ -52,7 +52,17 @@ This Code consist of two methods, and has a BufferedReader for input
 
 ### 4. ATMInfo.java
 
+This Code is ATM information consist of five methods
 
+(1) insertC : This method insert a card in an ATM
+
+(2) removeC : This method remove a card in an ATM
+
+(3) moneyIn : This method puts money into an ATM
+
+(4) moneyOut : This method outs money at an ATM
+
+(5) isPossibleWithdraw : This method checks whether ATM has enough money
 
 ### 5. Main.java
 
