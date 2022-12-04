@@ -6,14 +6,14 @@ public class Account {
 
     private int balance;
 
-    private String accountNum;
+    private int pinNum;
 
     private User userInformation;
 
-    public Account(String bankName, int balance, String accountNum, User userInformation) {
+    public Account(String bankName, int balance, int pinNum, User userInformation) {
         this.bankName = bankName;
         this.balance = balance;
-        this.accountNum = accountNum;
+        this.pinNum = pinNum;
         this.userInformation = userInformation;
     }
 
@@ -33,7 +33,7 @@ public class Account {
         String depPhrase = "Deposited amount is " + money;
         String curPhrase = "Current balance is " + cost;
         System.out.println(depPhrase);
-        System.out.print(curPhrase);
+        System.out.println(curPhrase);
     }
 
     public void withDraw(int money) {
@@ -42,16 +42,16 @@ public class Account {
             if(cost < 0) {
                 throw new Exception();
             }
+            this.balance = cost;
             System.out.println("withdraw money "+ money + " current balance is " + cost);
         } catch (Exception e) {
             System.out.println("Balance is insufficient");
         }
 
     }
-
-
-
-
+    public int getPinNum() {
+        return this.pinNum;
+    }
 
 
 }

@@ -4,15 +4,15 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ATM {
+public class ATMDisplay {
+
     // pinNumber Confirm Logic
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private final static int trials = 5;
-    public static int readPinNum() throws IOException {
+    public static int readNum() throws IOException {
         try {
             return Integer.parseInt(br.readLine());
         } catch (Exception e) {
-            System.out.println("Please Enter Only Number");
         }
         return 0;
     }
@@ -22,7 +22,7 @@ public class ATM {
         boolean verify = false;
         System.out.println("Enter your pin Number");
         while(trial < trials) {
-            int pin = readPinNum();
+            int pin = readNum();
             if(pin == correct) {
                 verify = true;
                 break;
