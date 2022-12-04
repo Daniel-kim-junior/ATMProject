@@ -21,10 +21,6 @@ public class Account {
         System.out.println(this.balance);
     }
 
-    public int returnWithdraw() {
-        return this.balance;
-    }
-
 
     public void deposit(int money) {
         this.balance += money;
@@ -36,7 +32,7 @@ public class Account {
 
     public void withDraw(int money) {
         try {
-            int cost = returnWithdraw() - money;
+            int cost = this.balance - money;
             if(cost < 0) {
                 throw new Exception();
             }
