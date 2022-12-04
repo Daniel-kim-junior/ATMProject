@@ -20,7 +20,7 @@ Based on your work, another engineer should be able to implement the user interf
 
 You can simplify some complex real world problems if you think it's not worth illustrating in the project.
 
-## Environment and Code explan
+## Environment and Code explain
 Language : JAVA 11
 
 The five files are located to "src/com/minsung"
