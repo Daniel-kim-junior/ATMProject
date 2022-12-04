@@ -27,19 +27,27 @@ The five files are located to "src/com/minsung"
 
 ### 1. Account.java
 This Code consist of Account Information and four methods
+
 (1) showBalance : User can view their balance
+
 (2) deposit : User can deposit at their account
+
 (3) withDraw : User can withdraw money from their account
+
 (4) getPinNum : It is used to compare with the pinNumber recieved from main input for testing (getter)
+
 ### 2. User.java
 This Code consist of User Information and two methods
+
 (1) getUserName : getter userName
+
 (2) getAccountNum : getter accountNum
 
 ### 3. ATMDisplay.java
 This Code consist of two methods, and has a BufferedReader for input
 
 (1) readNum : This method uses a BufferedReader and Exception process for user input.
+
 (2) pinVerify : This method checks the user's pin number with a limit of five inputs.
 
 ### 4. ATMInfo.java
@@ -47,4 +55,5 @@ This Code consist of two methods, and has a BufferedReader for input
 
 
 ### 5. Main.java
+
 This Code is consist of looping Test and Final String variable and Create instance and Boolean Reverse method
