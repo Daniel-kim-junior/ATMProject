@@ -19,10 +19,6 @@ public class ATMInfo {
         this.ATM_ID = ATM_ID;
     }
 
-    public boolean isInsertCard() {
-        return this.insertCard;
-    }
-
     public void insertC() {
          this.insertCard = true;
     }
@@ -30,11 +26,12 @@ public class ATMInfo {
         this.insertCard = false;
     }
 
-    public void deposit(int money) {
+
+    public void moneyIn(int money) {
         this.insideMoney += money;
     }
 
-    public void withdraw(int money) {
+    public void moneyOut(int money) {
         this.insideMoney -= money;
     }
 

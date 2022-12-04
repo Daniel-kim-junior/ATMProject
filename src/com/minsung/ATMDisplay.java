@@ -6,9 +6,10 @@ import java.io.InputStreamReader;
 
 public class ATMDisplay {
 
-    // pinNumber Confirm Logic
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private final static int trials = 5;
+
+    // Input Number Logic
     public static int readNum() throws IOException {
         try {
             return Integer.parseInt(br.readLine());
@@ -17,6 +18,7 @@ public class ATMDisplay {
         return 0;
     }
 
+    // pinNumber Confirm Logic
     public static boolean pinVerify(int correct) throws IOException {
         int trial = 0;
         boolean verify = false;

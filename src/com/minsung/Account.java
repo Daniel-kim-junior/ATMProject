@@ -28,10 +28,8 @@ public class Account {
 
     public void deposit(int money) {
         this.balance += money;
-        int cost = returnWithdraw();
-
         String depPhrase = "Deposited amount is " + money;
-        String curPhrase = "Current balance is " + cost;
+        String curPhrase = "Current balance is " + this.balance;
         System.out.println(depPhrase);
         System.out.println(curPhrase);
     }

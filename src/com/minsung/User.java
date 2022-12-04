@@ -2,12 +2,18 @@ package com.minsung;
 
 public class User {
     private String accountNum;
-    private String firstName;
-    private String lastName;
+    private String name;
 
-    User(String firstName, String lastName, String accountNum) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    User(String name, String accountNum) {
+        this.name = name;
         this.accountNum = accountNum;
+    }
+
+    public String getUserName() {
+        return this.name;
+    }
+
+    public String getAccountNum() {
+        return this.accountNum;
     }
 }
